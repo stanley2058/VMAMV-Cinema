@@ -17,7 +17,7 @@ cd ..
 
 cd EurekaServer
 ./build.sh
-cd 
+cd ..
 
 cd Payment
 ./build.sh
