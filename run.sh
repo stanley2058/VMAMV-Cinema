@@ -19,7 +19,7 @@ echo "Waiting For Eureka Server..."
 sleep 30s
 
 docker run -d -p $VMAMV_Port:$VMAMV_Port \
-           -e ZIPKIN=$PREFIX$HOST:ZIPKIN_Port \
+           -e ZIPKIN=$PREFIX$HOST:$ZIPKIN_Port \
            -e PORT=$VMAMV_Port --name VMAMVS $VMAMV_Image:latest
 
 echo "Waiting For VMAMV Server..."
